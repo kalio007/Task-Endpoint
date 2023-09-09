@@ -5,7 +5,7 @@ dotenv.config();
 const port = process.env.PORT || 3000
 
 // defining the API endpoint
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
   const track = req.query.track;
   const slack_name = req.query.slack_name;
   const github_file_url = 'https://github.com/kalio007/Task-Endpoint/blob/main/app.js';
